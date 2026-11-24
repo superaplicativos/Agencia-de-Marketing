@@ -1,0 +1,21 @@
+{
+  "name": "Super Aplicativos - Agência de Marketing Digital",
+  "short_name": "Super Aplicativos",
+  "description": "Agência de marketing digital em Ribeirão Preto. Tráfego pago, sites, aplicativos e gestão de redes sociais.",
+  "start_url": "/Agencia-de-Marketing/",
+  "scope": "/Agencia-de-Marketing/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#7c3aed",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "categories": ["business", "marketing", "advertising"],
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

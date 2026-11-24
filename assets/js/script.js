@@ -35,7 +35,7 @@
 
     /* ---------- Scroll reveal ---------- */
     const revealEls = document.querySelectorAll(
-        '.service-card, .diff-card, .stat-card, .testimonial-card, .process-step, .faq-item, .final-cta-box'
+        '.service-card, .diff-card, .stat-card, .testimonial-card, .process-step, .faq-item, .final-cta-box, .about-image, .about-content, .results-dashboard'
     );
     revealEls.forEach(el => el.classList.add('reveal'));
 

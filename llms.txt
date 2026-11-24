@@ -1,0 +1,42 @@
+# Super Aplicativos
+
+> Agência de marketing digital em Ribeirão Preto (SP), Brasil. Atende Ribeirão Preto, Franca, São Carlos, Araraquara, Catanduva, Jaboticabal e todo o Brasil.
+
+## Sobre
+
+A Super Aplicativos é uma agência de marketing digital fundada em 2018 em Ribeirão Preto, no interior de São Paulo. A equipe é sênior e certificada em Meta Ads e Google Ads, com mais de 7 anos de mercado e mais de 50 negócios escalados em nichos como e-commerce, clínicas, imobiliárias, restaurantes, serviços locais e B2B.
+
+O foco é resultado mensurável: leads qualificados, vendas reais e crescimento sustentável. Sem métricas de vaidade, com relatórios transparentes em tempo real e atendimento humano e próximo.
+
+## Serviços
+
+- **Tráfego Pago**: Gestão de campanhas em Meta Ads, Google Ads e TikTok Ads. Segmentação avançada, criativos persuasivos, otimização contínua de ROI.
+- **Desenvolvimento de Sites e Aplicativos**: Sites institucionais, e-commerces, landing pages de alta conversão e aplicativos iOS e Android sob medida.
+- **Gestão de Redes Sociais**: Estratégia de conteúdo, design, copywriting, reels, gestão de comunidade em Instagram, Facebook, TikTok e LinkedIn.
+- **SEO e Marketing de Conteúdo**: SEO técnico e on-page, produção de conteúdo, link building, authority marketing.
+- **Branding e Design**: Identidade visual, logotipo, manual de marca, templates e materiais gráficos.
+- **Plano Completo de Growth**: Estratégia integrada de todos os serviços para escalar negócios de forma estruturada.
+
+## Área de Atendimento
+
+Atendimento presencial em Ribeirão Preto e atendimento 100% digital para todo o Brasil, incluindo: Franca, São Carlos, Araraquara, Catanduva, Jaboticabal, Sertãozinho, Cravinhos, Brodowski, Batatais, Jundiaí, Campinas e demais cidades.
+
+## Contato
+
+- WhatsApp: +55 11 96616-1611
+- Localização: Ribeirão Preto, São Paulo, Brasil
+- Coordenadas: -21.1775, -47.8103
+- Horário: Seg-Sex 09h-18h, Sáb 09h-12h
+
+## Processo de Trabalho
+
+1. Diagnóstico gratuito no WhatsApp
+2. Estratégia personalizada com metas e projeção
+3. Execução e implementação
+4. Otimização contínua com dashboards em tempo real
+
+## Links
+
+- [Site oficial](https://superaplicativos.github.io/Agencia-de-Marketing/)
+- [WhatsApp para contato](https://wa.me/5511966161611)
+- [GitHub](https://github.com/superaplicativos)

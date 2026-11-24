@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Search engines specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+
+# Block nothing - all public
+Disallow:
+
+Sitemap: https://superaplicativos.github.io/Agencia-de-Marketing/sitemap.xml

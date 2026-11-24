@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+    <url>
+        <loc>https://superaplicativos.github.io/Agencia-de-Marketing/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <geo:geo>
+            <geo:location>
+                <geo:point>
+                    <geo:lat>-21.1775</geo:lat>
+                    <geo:long>-47.8103</geo:long>
+                </geo:point>
+                <geo:placename>Ribeirão Preto, São Paulo, Brasil</geo:placename>
+            </geo:location>
+        </geo:geo>
+        <image:image>
+            <image:loc>https://superaplicativos.github.io/Agencia-de-Marketing/assets/img/hero-dashboard.png</image:loc>
+            <image:title>Dashboard de marketing digital Super Aplicativos Ribeirão Preto</image:title>
+            <image:caption>Dashboard com gráficos de crescimento, métricas de tráfego pago e redes sociais</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://superaplicativos.github.io/Agencia-de-Marketing/assets/img/team-office.png</image:loc>
+            <image:title>Equipe Super Aplicativos em Ribeirão Preto</image:title>
+            <image:caption>Equipe de marketing digital analisando dashboards em escritório moderno</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://superaplicativos.github.io/Agencia-de-Marketing/assets/img/results-dashboard.png</image:loc>
+            <image:title>Resultados de marketing digital Super Aplicativos</image:title>
+            <image:caption>Dashboard de resultados com ROI, funil de conversão e métricas</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://superaplicativos.github.io/Agencia-de-Marketing/assets/img/service-traffic.png</image:loc>
+            <image:title>Tráfego pago Meta Ads Google Ads Ribeirão Preto</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://superaplicativos.github.io/Agencia-de-Marketing/assets/img/service-dev.png</image:loc>
+            <image:title>Desenvolvimento de sites e aplicativos Ribeirão Preto</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://superaplicativos.github.io/Agencia-de-Marketing/assets/img/service-social.png</image:loc>
+            <image:title>Gestão de redes sociais Ribeirão Preto</image:title>
+        </image:image>
+    </url>
+</urlset>
