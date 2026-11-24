@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria de Marketing Pessoal | Super Aplicativos</title>
+    <meta name="description" content="Mentoria de Marketing Pessoal para você se tornar uma autoridade no seu nicho, atrair clientes e oportunidades. Posicionamento, branding pessoal e estratégia de conteúdo. Vagas limitadas.">
+    <meta name="keywords" content="mentoria de marketing pessoal, branding pessoal, marketing pessoal, mentoria de marketing digital, posicionamento pessoal, autoridade, personal branding Ribeirão Preto">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://superaplicativos.github.io/Agencia-de-Marketing/mentoria.html">
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="Ribeirão Preto, São Paulo, Brasil">
+    <meta property="og:title" content="Mentoria de Marketing Pessoal | Super Aplicativos">
+    <meta property="og:description" content="Seja reconhecido como autoridade no seu mercado. Mentoria prática de marketing pessoal e branding.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://superaplicativos.github.io/Agencia-de-Marketing/mentoria.html">
+    <meta property="og:image" content="https://superaplicativos.github.io/Agencia-de-Marketing/assets/img/hero-dashboard.png">
+    <meta name="theme-color" content="#7c3aed">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <style>
+        /* Mentoria-specific styles */
+        .mentoria-hero {
+            position: relative;
+            min-height: 92vh;
+            display: flex;
+            align-items: center;
+            padding: 140px 0 70px;
+            background: var(--gradient-dark);
+            overflow: hidden;
+            color: #fff;
+        }
+        .mentoria-hero .hero-bg { position: absolute; inset: 0; z-index: 0; }
+        .mentoria-hero .hero-content {
+            position: relative; z-index: 1; text-align: center; max-width: 880px;
+        }
+        .mentoria-hero .hero-title { font-size: clamp(2.2rem, 5.5vw, 4rem); margin-bottom: 22px; }
+        .mentoria-hero .hero-subtitle { max-width: 680px; margin: 0 auto 34px; }
+        .mentoria-hero .hero-cta { justify-content: center; margin-bottom: 0; }
+        .mentor-highlight {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 10px 22px; border-radius: 100px;
+            background: linear-gradient(135deg, rgba(249,115,22,0.18), rgba(236,72,153,0.18));
+            border: 1px solid rgba(249,115,22,0.4);
+            font-size: 0.9rem; font-weight: 600; color: #fdba74; margin-bottom: 26px;
+        }
+        .countdown-bar {
+            display: inline-flex; align-items: center; gap: 8px;
+            margin-top: 30px; padding: 10px 20px;
+            background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 100px; font-size: 0.88rem; color: rgba(255,255,255,0.8);
+        }
+        .countdown-bar strong { color: var(--color-whatsapp); }
+        .transformation-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;
+        }
+        .trans-card {
+            background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+            padding: 32px 26px; transition: all var(--transition); position: relative;
+        }
+        .trans-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--color-primary-light); }
+        .trans-card::before {
+            content: ''; position: absolute; left: 0; top: 26px; bottom: 26px; width: 4px;
+            background: var(--gradient-brand); border-radius: 0 4px 4px 0;
+        }
+        .trans-from { color: var(--color-text-muted); font-size: 0.88rem; text-decoration: line-through; margin-bottom: 6px; }
+        .trans-to { color: var(--color-text); font-size: 1.05rem; font-weight: 600; font-family: var(--font-heading); }
+        .trans-arrow { text-align: center; color: var(--color-primary); font-size: 1.5rem; margin: 14px 0; }
+        .includes-list { display: grid; grid-template-columns: 1fr; gap: 14px; max-width: 720px; margin: 0 auto; }
+        .include-item {
+            display: flex; align-items: flex-start; gap: 16px; padding: 18px 22px;
+            background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-md);
+            transition: all var(--transition);
+        }
+        .include-item:hover { border-color: var(--color-primary-light); box-shadow: var(--shadow-sm); }
+        .include-num {
+            flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+            background: var(--gradient-brand); color: #fff; display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-heading); font-weight: 700; font-size: 0.95rem;
+        }
+        .include-item h4 { font-size: 1.02rem; margin-bottom: 4px; }
+        .include-item p { font-size: 0.92rem; color: var(--color-text-soft); margin: 0; }
+        .pricing-box {
+            max-width: 560px; margin: 0 auto; background: var(--gradient-dark);
+            border-radius: var(--radius-xl); padding: 50px 40px; text-align: center;
+            color: #fff; position: relative; overflow: hidden;
+        }
+        .pricing-box::before {
+            content: ''; position: absolute; top: 50%; left: 50%; width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(124,58,237,0.35) 0%, transparent 60%);
+            transform: translate(-50%, -50%); z-index: 0;
+        }
+        .pricing-box > * { position: relative; z-index: 1; }
+        .pricing-tag {
+            display: inline-block; padding: 6px 16px; background: rgba(255,255,255,0.1);
+            border-radius: 100px; font-size: 0.82rem; font-weight: 600; margin-bottom: 18px; color: #fbbf24;
+        }
+        .pricing-title { font-size: 1.8rem; margin-bottom: 10px; }
+        .pricing-price { font-family: var(--font-heading); font-size: 3rem; font-weight: 800; margin: 14px 0; }
+        .pricing-price small { font-size: 1rem; font-weight: 400; opacity: 0.6; }
+        .pricing-features { text-align: left; margin: 26px 0; display: grid; gap: 12px; }
+        .pricing-features li { display: flex; align-items: center; gap: 12px; font-size: 0.96rem; color: rgba(255,255,255,0.85); }
+        .pricing-features li::before {
+            content: '✓'; width: 22px; height: 22px; background: var(--color-whatsapp);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 0.72rem; font-weight: 700; color: #fff; flex-shrink: 0;
+        }
+        .back-link {
+            display: inline-flex; align-items: center; gap: 8px; color: var(--color-text-soft);
+            font-size: 0.9rem; font-weight: 500; transition: color var(--transition);
+        }
+        .back-link:hover { color: var(--color-primary); }
+        .audience-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 14px; }
+        .audience-tags span {
+            padding: 8px 16px; background: var(--gradient-brand-soft); border: 1px solid rgba(124,58,237,0.2);
+            border-radius: 100px; font-size: 0.86rem; font-weight: 500; color: var(--color-primary);
+        }
+        @media (max-width: 768px) {
+            .mentoria-hero { min-height: auto; padding: 120px 0 50px; }
+            .pricing-box { padding: 36px 24px; }
+            .pricing-price { font-size: 2.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">SA</span>
+                <span class="logo-text">Super<span>Aplicativos</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#transformacao">Transformação</a>
+                <a href="#para-quem">Para Quem</a>
+                <a href="#conteudo">Conteúdo</a>
+                <a href="#metodo">Método</a>
+                <a href="#investimento">Investimento</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="https://wa.me/5511966161611?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20Mentoria%20de%20Marketing%20Pessoal." class="btn btn-whatsapp header-cta" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.608.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Quero a Mentoria</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO MENTORIA -->
+    <section class="mentoria-hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-glow glow-1"></div>
+            <div class="hero-glow glow-2"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="mentor-highlight">
+                <span class="pulse-dot"></span>
+                Mentoria de Marketing Pessoal — Vagas Limitadas
+            </div>
+            <h1 class="hero-title">
+                Seja reconhecido como <span class="gradient-text">autoridade</span> no seu mercado
+            </h1>
+            <p class="hero-subtitle">
+                Mentoria prática para profissionais que querem construir uma marca pessoal forte,
+                atrair clientes de valor e se posicionar como referência no seu nicho — em Ribeirão Preto
+                e para todo o Brasil.
+            </p>
+            <div class="hero-cta">
+                <a href="https://wa.me/5511966161611?text=Ol%C3%A1!%20Quero%20garantir%20minha%20vaga%20na%20Mentoria%20de%20Marketing%20Pessoal.%20Pode%20me%20passar%20detalhes?" class="btn btn-whatsapp btn-lg btn-glow" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.608.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Garantir minha vaga
+                </a>
+                <a href="#investimento" class="btn btn-outline btn-lg">Ver Investimento</a>
+            </div>
+            <div class="countdown-bar">
+                <strong>Turma de dezembro:</strong> apenas 10 vagas · 6 já preenchidas
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSFORMAÇÃO -->
+    <section class="services section" id="transformacao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">A Transformação</span>
+                <h2 class="section-title">De invisível para referência do seu mercado</h2>
+                <p class="section-subtitle">A mentoria trabalha exatamente o que separa um profissional comum de uma autoridade reconhecida.</p>
+            </div>
+            <div class="transformation-grid">
+                <div class="trans-card">
+                    <div class="trans-from">Postar conteúdo sem estratégia</div>
+                    <div class="trans-arrow">↓</div>
+                    <div class="trans-to">Conteúdo com propósito e posicionamento claro</div>
+                </div>
+                <div class="trans-card">
+                    <div class="trans-from">Concorrir por preço</div>
+                    <div class="trans-arrow">↓</div>
+                    <div class="trans-to">Ser procurado pelo valor que entrega</div>
+                </div>
+                <div class="trans-card">
+                    <div class="trans-from">Sem presença digital</div>
+                    <div class="trans-arrow">↓</div>
+                    <div class="trans-to">Marca pessoal que atrai oportunidades</div>
+                </div>
+                <div class="trans-card">
+                    <div class="trans-from">Incerto sobre o próximo passo</div>
+                    <div class="trans-arrow">↓</div>
+                    <div class="trans-to">Plano claro de crescimento e monetização</div>
+                </div>
+                <div class="trans-card">
+                    <div class="trans-from">Audiência pequena e fria</div>
+                    <div class="trans-arrow">↓</div>
+                    <div class="trans-to">Comunidade engajada e pronta para comprar</div>
+                </div>
+                <div class="trans-card">
+                    <div class="trans-from">Trabalhar muito, ganhar pouco</div>
+                    <div class="trans-arrow">↓</div>
+                    <div class="trans-to">Estrutura para cobrar mais e trabalhar melhor</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section class="differentials section section-dark" id="para-quem">
+        <div class="container">
+            <div class="section-header section-header-light">
+                <span class="section-tag">Para Quem É</span>
+                <h2 class="section-title">A mentoria certa para quem quer crescer com estratégia</h2>
+                <p class="section-subtitle">Se você se identifica com algum desses perfis, a mentoria vai acelerar seu resultado.</p>
+            </div>
+            <div class="audience-tags">
+                <span>Empreendedores</span>
+                <span>Consultores</span>
+                <span>Freelancers</span>
+                <span>Médicos e Dentistas</span>
+                <span>Advogados</span>
+                <span>Corretores de Imóveis</span>
+                <span>Profissionais de Saúde</span>
+                <span>Coaches e Mentores</span>
+                <span>Professores</span>
+                <span>Arquitetos e Designers</span>
+                <span>Contadores</span>
+                <span>Especialistas em geral</span>
+            </div>
+            <div style="text-align:center; margin-top: 40px;">
+                <a href="https://wa.me/5511966161611?text=Ol%C3%A1!%20Sou%20[seu%20profiss%C3%A3o]%20e%20quero%20saber%20se%20a%20Mentoria%20de%20Marketing%20Pessoal%20%C3%A9%20para%20mim." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+                    Não sei se é para mim? Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO DA MENTORIA -->
+    <section class="services section" id="conteudo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O Que Você Recebe</span>
+                <h2 class="section-title">Conteúdo prático para construir sua autoridade</h2>
+                <p class="section-subtitle">Um programa estruturado em 8 módulos, do posicionamento à monetização da sua marca pessoal.</p>
+            </div>
+            <div class="includes-list">
+                <div class="include-item">
+                    <div class="include-num">1</div>
+                    <div>
+                        <h4>Posicionamento e nicho</h4>
+                        <p>Definição clara de quem você é, para quem fala e qual o seu diferencial competitivo no mercado.</p>
+                    </div>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">2</div>
+                    <div>
+                        <h4>Identidade de marca pessoal</h4>
+                        <p>Construção da sua identidade visual, bio, tom de voz e narrativa — do perfil às apresentações.</p>
+                    </div>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">3</div>
+                    <div>
+                        <h4>Estratégia de conteúdo</h4>
+                        <p>Calendário editorial, pilares de conteúdo e produção que gera autoridade e atrai o público certo.</p>
+                    </div>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">4</div>
+                    <div>
+                        <h4>Instagram e LinkedIn estratégicos</h4>
+                        <p>Otimização de perfis, Reels, carrosséis e posts para maximizar alcance e conversão.</p>
+                    </div>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">5</div>
+                    <div>
+                        <h4>Tráfego pago para marca pessoal</h4>
+                        <p>Como impulsionar conteúdo e captar leads com Meta Ads e Google Ads com orçamento enxuto.</p>
+                    </div>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">6</div>
+                    <div>
+                        <h4>Captação de clientes e oportunidades</h4>
+                        <p>Estruturas de funil, oferta, copy de vendas e rituals de prospecção que funcionam.</p>
+                    </div>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">7</div>
+                    <div>
+                        <h4>Monetização da autoridade</h4>
+                        <p>Como cobrar mais, criar mentorias próprias, infoprodutos e parcerias estratégicas.</p>
+                    </div>
+                </div>
+                <div class="include-item">
+                    <div class="include-num">8</div>
+                    <div>
+                        <h4>Plano de ação personalizado</h4>
+                        <p>Roteiro de 90 dias sob medida para o seu momento, nicho e objetivo — revisado comigo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÉTODO -->
+    <section class="process section" id="metodo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Como Funciona</span>
+                <h2 class="section-title">Mentoria 1-a-1, prática e direta ao ponto</h2>
+                <p class="section-subtitle">Encontros ao vivo, material de apoio e acompanhamento próximo durante todo o programa.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-marker"><span class="process-num">1</span></div>
+                    <div class="process-content">
+                        <h3>Diagnóstico inicial</h3>
+                        <p>Conversamos sobre seus objetivos, momento atual e mercado. Definimos metas claras para a mentoria.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-marker"><span class="process-num">2</span></div>
+                    <div class="process-content">
+                        <h3>8 encontros 1-a-1 (60min cada)</h3>
+                        <p>Sessões semanais ou quinzenais ao vivo, por vídeo, com conteúdo prático e execução entre os encontros.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-marker"><span class="process-num">3</span></div>
+                    <div class="process-content">
+                        <h3>Acompanhamento no WhatsApp</h3>
+                        <p>Acesso direto a mim durante toda a mentoria para tirar dúvidas, revisar conteúdos e ajustar estratégia.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-marker"><span class="process-num">4</span></div>
+                    <div class="process-content">
+                        <h3>Plano de 90 dias + materiais</h3>
+                        <p>Roteiro personalizado, templates, planilhas e biblioteca de referências para você executar com confiança.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INVESTIMENTO -->
+    <section class="results section" id="investimento">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Investimento</span>
+                <h2 class="section-title">Um investimento que se paga em clientes</h2>
+                <p class="section-subtitle">A mentoria completa com 8 encontros, acompanhamento e materiais. Vagas limitadas por turma.</p>
+            </div>
+            <div class="pricing-box">
+                <div class="pricing-tag">Turma de Dezembro · 4 vagas restantes</div>
+                <h3 class="pricing-title">Mentoria Marketing Pessoal</h3>
+                <div class="pricing-price">
+                    R$ 2.997 <small>à vista ou 12x de R$ 299</small>
+                </div>
+                <ul class="pricing-features">
+                    <li>8 encontros 1-a-1 de 60 minutos ao vivo</li>
+                    <li>Acompanhamento direto no WhatsApp por 90 dias</li>
+                    <li>Plano de ação personalizado para o seu nicho</li>
+                    <li>Acesso a templates, planilhas e biblioteca</li>
+                    <li>Análise de perfis e conteúdos a cada encontro</li>
+                    <li>Certificado de conclusão</li>
+                    <li>Bônus: masterclass de tráfego pago para marca pessoal</li>
+                </ul>
+                <a href="https://wa.me/5511966161611?text=Ol%C3%A1!%20Quero%20garantir%20minha%20vaga%20na%20Mentoria%20de%20Marketing%20Pessoal.%20Pode%20me%20enviar%20o%20link%20de%20pagamento%3F" class="btn btn-whatsapp btn-lg btn-glow" target="_blank" rel="noopener" style="width:100%; margin-bottom: 12px;">
+                    Garantir minha vaga agora
+                </a>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.55);">
+                    Pix, cartão ou boleto · Garantia de 7 dias
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+        <div class="container container-narrow">
+            <div class="section-header">
+                <span class="section-tag">Dúvidas</span>
+                <h2 class="section-title">Perguntas frequentes</h2>
+                <p class="section-subtitle">Qualquer outra dúvida, chama no WhatsApp que respondo em minutos.</p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary>A mentoria é presencial ou online?</summary>
+                    <div class="faq-answer">
+                        <p>Online, por vídeo, com encontros ao vivo. Isso permite atender profissionais de Ribeirão Preto, Franca, São Carlos e de todo o Brasil com a mesma qualidade. Se você estiver em Ribeirão Preto, podemos combinar um encontro presencial de diagnóstico.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Quanto tempo dura a mentoria?</summary>
+                    <div class="faq-answer">
+                        <p>8 encontros de 60 minutos, geralmente um por semana ou quinzenal. O programa completo dura de 8 a 16 semanas, mais 90 dias de acompanhamento no WhatsApp.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Preciso já ter presença digital?</summary>
+                    <div class="faq-answer">
+                        <p>Não. A mentoria atende desde quem está começando do zero até quem já tem presença mas não consegue resultado. O diagnóstico inicial define o ponto de partida.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Funciona para o meu nicho?</summary>
+                    <div class="faq-answer">
+                        <p>A metodologia funciona para qualquer profissional que dependa de autoridade e relacionamento para vender: médicos, advogados, consultores, corretores, coaches, arquitetos, professores e outros especialistas. O plano é personalizado para o seu mercado.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>E se eu não gostar?</summary>
+                    <div class="faq-answer">
+                        <p>Você tem 7 dias de garantia incondicional após o primeiro encontro. Se não fizer sentido, devolvemos 100% do investimento.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Como faço para me inscrever?</summary>
+                    <div class="faq-answer">
+                        <p>Clique em qualquer botão de WhatsApp desta página. Conversamos sobre seus objetivos, confirmamos se há vaga disponível e você recebe o link de pagamento. Simples assim.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="final-cta-box">
+                <div class="final-cta-glow"></div>
+                <h2 class="final-cta-title">Pronto para virar referência?</h2>
+                <p class="final-cta-subtitle">A diferença entre ser mais um profissional e ser a autoridade que o mercado procura começa com uma conversa. Vagas limitadas por turma.</p>
+                <a href="https://wa.me/5511966161611?text=Ol%C3%A1!%20Quero%20garantir%20minha%20vaga%20na%20Mentoria%20de%20Marketing%20Pessoal." class="btn btn-whatsapp btn-lg btn-glow" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.608.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Garantir minha vaga
+                </a>
+                <p class="final-cta-note">4 vagas restantes · Resposta em até 15 minutos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding-top: 0;">
+                <a href="index.html" class="back-link">← Voltar para o site da agência</a>
+                <p>&copy; 2026 Super Aplicativos · Mentoria de Marketing Pessoal · Ribeirão Preto — SP</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511966161611?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20Mentoria%20de%20Marketing%20Pessoal." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.608.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="whatsapp-pulse"></span>
+        <span class="whatsapp-tooltip">Garantir vaga</span>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
